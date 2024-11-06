@@ -30,7 +30,7 @@ class Post
     {
         // return Arr::first(static::all(), function ($post) use ($slug) {
         //     return $post['slug'] == $slug;
-        // });
+        // });0
 
         $post = Arr::first(static::all(), fn($post) => $post['slug'] == $slug);
 
